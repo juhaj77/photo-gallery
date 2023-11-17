@@ -6,4 +6,5 @@ export const options = {
   draggable: true,
   progress: 0.5,
 }
+
 export const urlPrefix = ''
