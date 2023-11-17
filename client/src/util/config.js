@@ -6,4 +6,4 @@ export const options = {
   draggable: true,
   progress: 0.5,
 }
-export const urlPrefix = process.env.NODE_ENV === 'development' ? 'http://localhost:8000' : ''
+export const urlPrefix = ''
