@@ -28,7 +28,8 @@ const MyImage = (props) => {
             margin:'auto',
             zIndex:'999',
             width:'100vw',
-            height:'100vh'
+            height:'100vh',
+            padding: '1.7em 0'
           }}></div>
           <img onClick={() => setFit(false)} 
             src={pic.src} 
@@ -41,15 +42,16 @@ const MyImage = (props) => {
               maxWidth:'100vw',
               maxHeight:'100vh',
               height:'auto',
-              cursor:'pointer'
+              cursor:'pointer',
+              padding: '1.7em 0'
             }} />
         </>
          :
         <div style={{
             width: 'fit-content',
             textAlign: 'center',
-            height: 'calc(100vh/3 - 1em/3)',
-            margin: '0 1em 0 0',
+            height: 'calc(100vh/3 - 4em/3)',
+            margin: '1em 1em 0 0',
           }}
           >
             <Header title={props.name} />
@@ -64,4 +66,5 @@ const MyImage = (props) => {
             <InfoPanel {...props} />
         </div>
 }
+
 export default MyImage

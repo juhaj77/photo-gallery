@@ -12,6 +12,7 @@ const Container = styled.div`
 `
 const Content = styled.div`
   height: 1.7em;
+  line-height: 1.7em;
   display: flex;
   flex-flow: row-wrap;
   font-size: 1em;
@@ -24,6 +25,7 @@ const Content = styled.div`
   margin: 0;
   padding: 0;
   white-space: nowrap;
+  font-weight:700;
 `
 const LeftButton = styled.button`
   align-items: center;
@@ -72,7 +74,7 @@ const InfoPanel = ({ name, id, details, update, remove }) => {
   return (
     <Container>
       <Content style={style.basic}>
-        <div style={{ margin: '0 0 .1em .7em', alignSelf: 'strech', lineHeight: '1em' }}>
+        <div style={{ margin: '0 0 .1em .7em', alignSelf: 'strech', lineHeight: '1em', height: '1em' }}>
           {details}
         </div>
         <div style={{ alignItems: 'center' }}>

@@ -22,10 +22,10 @@ const StyledApp = styled.div`
   animation:400ms ${fadeIn} ease-in;
   top: 0;
   left: 0;
-  width: calc(99.4vw - .6vh - 10px);
+  width: calc(100vw - 1em);
   height: 100%;
   font-size: calc(.3vh + .3vw + 5px);
-  margin: -.666em 1em 0 1em;
+  margin: -1.7em 0em 0 1em;
   display: flex;
   flex-wrap: wrap;
   transition: 500ms;
@@ -35,7 +35,6 @@ const StyledApp = styled.div`
   justify-content: center;
   background: transparent;
 `
-
 const App = () => {
   const [itemArray, setItemArray] = useState(null)
   const [loading, setLoading] = useState(true)

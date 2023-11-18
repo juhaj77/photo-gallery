@@ -13,7 +13,7 @@ const FlexItem = styled.div`
   align-self: strech;
 `
 const Container2 = styled.div`
-  height: calc(100vh/3 - 4em/3 - .75em); 
+  height: calc(100vh/3 - 4em/3 - 1em); 
   width: calc(9vw + 9vh); 
   max-width: 13.5em;
   overflow:hidden; 
@@ -23,7 +23,7 @@ const Container2 = styled.div`
   flex-direction: column; 
   justify-content: space-between; 
   align-items: flex-start; 
-  margin:1.666em 0 0 0;
+  margin:2.7em 0 0 0;
   background-color: #800000;
   align-content: space-between; 
   flex-wrap: nowrap; 
