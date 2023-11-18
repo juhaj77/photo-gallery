@@ -13,7 +13,7 @@ const FlexItem = styled.div`
   align-self: strech;
 `
 const Container2 = styled.div`
-  height: calc(100vh/3 - 4em/3 - .7em); 
+  height: calc(100vh/3 - 4em/3 - .75em); 
   width: calc(9vw + 9vh); 
   max-width: 13.5em;
   overflow:hidden; 
