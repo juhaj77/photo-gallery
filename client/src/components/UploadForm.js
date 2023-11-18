@@ -23,7 +23,7 @@ const Container2 = styled.div`
   flex-direction: column; 
   justify-content: space-between; 
   align-items: flex-start; 
-  margin:2.7em 0 0 0;
+  margin:2.7em 1em 0 0;
   background-color: #800000;
   align-content: space-between; 
   flex-wrap: nowrap; 
