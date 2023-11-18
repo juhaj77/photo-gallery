@@ -75,7 +75,7 @@ const InfoPanel = ({ name, id, details, update, remove }) => {
     <Container>
       <Content style={style.basic}>
         <div style={{ margin: '0 0 .1em .7em', alignSelf: 'strech', lineHeight: '1em', height: '1em' }}>
-          {details}
+          {name}
         </div>
         <div style={{ alignItems: 'center' }}>
           <LeftButton type="button" onClick={() => toggle(style)}>

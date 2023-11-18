@@ -25,7 +25,7 @@ const StyledApp = styled.div`
   width: calc(100vw - 1em);
   height: 100%;
   font-size: calc(.3vh + .3vw + 5px);
-  margin: -1.7em 0em 0 1em;
+  margin: 0 0em 0 1em;
   display: flex;
   flex-wrap: wrap;
   transition: 500ms;
@@ -34,6 +34,7 @@ const StyledApp = styled.div`
   align-items: flex-start;
   justify-content: center;
   background: transparent;
+  overflow-y: auto;
 `
 const App = () => {
   const [itemArray, setItemArray] = useState(null)
