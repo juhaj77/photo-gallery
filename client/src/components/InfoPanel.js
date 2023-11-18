@@ -33,6 +33,10 @@ const LeftButton = styled.button`
   margin: .2em;
   padding:.1em .5em .1em .5em;
   border-width: .01em;
+  background-color: #a35656;
+  border: 2px solid #bf6f6f;
+  border-style: outset;
+  color:#debdbd;
 `
 const RightButton = styled.button`
   align-items: center; 
@@ -42,6 +46,10 @@ const RightButton = styled.button`
   margin: .2em .2em .2em 0; 
   padding:.1em .5em .1em .5em; 
   border-width: .01em;
+  background-color: #a35656;
+  border: 2px solid #bf6f6f;
+  border-style: outset;
+  color:#debdbd;
 `
 const initial = { 
   basic: { display: ''}, 

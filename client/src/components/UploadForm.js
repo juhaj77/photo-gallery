@@ -13,26 +13,26 @@ const FlexItem = styled.div`
   align-self: strech;
 `
 const Container2 = styled.div`
-  height: calc(100vh/3 - 4em/3); 
+  height: calc(100vh/3 - 4em/3 - .7em); 
   width: calc(9vw + 9vh); 
-  min-width:15em;
-  min-height:21em;
-  overflow:visible; 
-  border-radius:1em;
+  max-width: 13.5em;
+  overflow:hidden; 
+  border-radius:0 1em 0 1em;
   color: white; 
   display: flex; 
   flex-direction: column; 
   justify-content: space-between; 
   align-items: flex-start; 
   margin:1.666em 0 0 0;
-  background-color: #264d73;
+  background-color: #800000;
   align-content: space-between; 
   flex-wrap: nowrap; 
   padding: .5em; 
   white-space: nowrap;
+  text-overflow: ellipsis;
 `
 const FormHeader = styled.span`
-  font-size: 2em; 
+  font-size: 1.2em; 
   line-height: 1em; 
   font-weight: 800; 
   padding: 0; 
@@ -45,10 +45,11 @@ const LabelStyle = styled.p`
   font-weight:bold; 
 `
 const TextInput = styled.input`
-  line-height: 1em;
-  height: 2.6em;  
+  line-height: 1.5em;
+  height: auto;
+  width: calc(100% - .5em);
   font-size: 1em; 
-  margin: 0; 
+  margin: 0 1em 0 0; 
   padding: 0;
 `
 
@@ -111,7 +112,7 @@ const UploadForm = ({ addItem }) => {
       <FlexItem>
         <LabelStyle>Upload picture (jpg/png) </LabelStyle>
         <input
-          style={{ lineHeight: '1.5em', fontSize: '1em', margin: '0' }}
+          style={{ textOverflow:'clip', lineHeight: '1em', fontSize: '1em', margin: '0' }}
           type="file"
           name="upload_file"
           className="form-control-file"
