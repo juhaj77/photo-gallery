@@ -19,6 +19,8 @@ create `.env` file with content:
     PORT=8000
     NODE_ENV=developtment
 ```
+fix urlPrefix in client/src/util/config.js (see comments)...    
+    
 __option A__ usage in production mode:
 1. set `NODE_ENV=production`
 2. build and run   
