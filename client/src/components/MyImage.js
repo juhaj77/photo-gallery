@@ -1,11 +1,12 @@
 /* eslint-disable react/destructuring-assignment */
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Header from './Header'
 import InfoPanel from './InfoPanel'
 
 const MyImage = (props) => {
 
   const [fit, setFit] = useState(false)
+  const pic = useRef(new Image())
 
   const arrayBufferToBase64 = (buffer) => {
     let binary = ''
@@ -14,11 +15,12 @@ const MyImage = (props) => {
     bytes.forEach((b) => binary += String.fromCharCode(b))
     return window.btoa(binary)
   }
-
-  const pic = new Image()
-  pic.src = `data:${props.picture.contentType};`
-        + `base64,${arrayBufferToBase64(props.picture.data.data)}`
-
+  
+  useEffect(() => {
+    pic.current.src = `data:${props.picture.contentType};`
+    + `base64,${arrayBufferToBase64(props.picture.data.data)}`
+  },[props.picture])
+ 
   return fit ?
         <>
           <div style={{ 
@@ -32,7 +34,7 @@ const MyImage = (props) => {
             padding: '1.7em 0'
           }}></div>
           <img onClick={() => setFit(false)} 
-            src={pic.src} 
+            src={pic.current.src} 
             alt={props.name} 
             style={{ 
               position:'absolute',
@@ -56,7 +58,7 @@ const MyImage = (props) => {
           >
             <Header title={props.name} />
             <img onClick={() => setFit(true)}
-              src={pic.src} 
+              src={pic.current.src} 
               alt={props.name} 
               style={{ 
                 borderRadius: '0 1em 0 0',
