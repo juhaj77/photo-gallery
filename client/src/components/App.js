@@ -35,6 +35,7 @@ const StyledApp = styled.div`
   justify-content: center;
   background: transparent;
   overflow-y: auto;
+  overflow-x: hidden;
 `
 const App = () => {
   const [itemArray, setItemArray] = useState(null)
@@ -87,7 +88,7 @@ const App = () => {
   }, [])
 
   return loading ? <StyledSpinner /> : (
-    <StyledApp>
+    <StyledApp id='styledapp'>
       {itemArray && itemArray.map((i) => (
         <MyImage
           key={i.id}
