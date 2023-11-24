@@ -19,6 +19,7 @@ const MyImage = (props) => {
   + `base64,${arrayBufferToBase64(props.picture.data.data)}`
   
   const handleFit = () => {
+    props.focus.current.scrollIntoView()
     setFit(true)
     document.getElementById('styledapp').style.overflowY = 'hidden'
   }

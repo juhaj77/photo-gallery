@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { toast } from 'react-toastify'
 import MyImage from './MyImage'
@@ -40,6 +40,7 @@ const StyledApp = styled.div`
 const App = () => {
   const [itemArray, setItemArray] = useState(null)
   const [loading, setLoading] = useState(true)
+  const focusElement = useRef()
   const addItem = (item) => {
     setItemArray(itemArray.concat(item))
   }
@@ -89,9 +90,11 @@ const App = () => {
 
   return loading ? <StyledSpinner /> : (
     <StyledApp id='styledapp'>
+      <div ref={focusElement}></div>
       {itemArray && itemArray.map((i) => (
         <MyImage
           key={i.id}
+          focus={focusElement}
           remove={remove}
           update={update}
           {...i}
