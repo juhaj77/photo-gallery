@@ -95,7 +95,8 @@ const UploadForm = ({ addItem }) => {
     data.append('details', itemDetails.input.value)
     upload(data).then(() => {
       setLoaded(0)
-      setSelectedFile(undefined)
+      setSelectedFile(null)
+      document.getElementById('file').value = ''
       itemName.reset()
       itemDetails.reset()
     }).catch((e) => {
@@ -112,6 +113,7 @@ const UploadForm = ({ addItem }) => {
       <FlexItem>
         <LabelStyle>Upload picture (jpg/png) </LabelStyle>
         <input
+          id='file'
           style={{ textOverflow:'clip', lineHeight: '1em', fontSize: '1em', margin: '0' }}
           type="file"
           name="upload_file"
