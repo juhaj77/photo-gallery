@@ -48,9 +48,10 @@ const MyImage = (props) => {
               top:'0',
               zIndex:'1000',
               margin:'auto',
-              maxWidth:'100vw',
+              maxWidth:'calc(100vw - 2em)',
               maxHeight:'100vh',
               height:'auto',
+              marginRight:'1em',
               cursor:'pointer',
             }} />
         </>

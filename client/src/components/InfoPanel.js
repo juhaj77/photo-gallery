@@ -32,6 +32,7 @@ const LeftButton = styled.button`
   font-weight: bold;
   height: 1.5em;
   line-height: 1em;
+  font-size:1em;
   margin: .2em;
   padding:.1em .5em .1em .5em;
   border-width: .01em;
@@ -44,7 +45,8 @@ const RightButton = styled.button`
   align-items: center; 
   font-weight: bold; 
   height: 1.5em; 
-  line-height: 1em; 
+  line-height:1em;
+  font-size:1em;
   margin: .2em .2em .2em 0; 
   padding:.1em .5em .1em .5em; 
   border-width: .01em;
