@@ -5,6 +5,7 @@ import { useField } from '../hooks/field'
 const Container = styled.div`
   border-radius: 0 0 0 1em;
   white-space: nowrap;
+  margin-top: -0.2em;
   height: 1.7em;
   background-color: #800000;
   color: white;
