@@ -10,8 +10,8 @@ npm package manager and mongodb uri
 
 ## Installing
 ```
-/img-gallery-with-upload/server>npm install
-/img-gallery-with-upload/client>npm install
+/photo-gallery/server>npm install
+/photo-gallery/client>npm install
 ```
 create `.env` file with content:
 ```
@@ -25,16 +25,16 @@ __option A__ usage in production mode:
 1. set `NODE_ENV=production`
 2. build and run   
 ```
-/img-gallery-with-upload/client>npm run build
-/img-gallery-with-upload/client>cp -r build ../server
-/img-gallery-with-upload/server>node server.js
+/photo-gallery/client>npm run build
+/photo-gallery/client>cp -r build ../server
+/photo-gallery/server>node server.js
 ```
 and open http://localhost:8000/ in browser. ___Now folder ./server has all what you need to deploy this on a live system___
 
 __option B__ usage in development mode:
 ```
-/img-gallery-with-upload/server>node server.js
-/img-gallery-with-upload/client>npm start
+/photo-gallery/server>node server.js
+/photo-gallery/client>npm start
 ```
 
 what it looks like:
