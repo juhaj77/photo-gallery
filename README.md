@@ -1,5 +1,5 @@
 # The Image Gallery With Upload Feature
-Stores images to MongoDB utilizing multer. This solution is easy to extend to uploading multiple files at once. **_Todo: 1. gridFS for bigger than 16Mb pics. 2. elegant navigation for overflowed images._**
+Stores images to MongoDB utilizing multer. This solution is easy to extend to uploading multiple files at once. **_Todo: 1. gridFS for bigger than 16Mb pics._**
 
 ### try it
 [app on render](https://photo-gallery-mwyi.onrender.com/)
