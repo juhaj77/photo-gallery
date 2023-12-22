@@ -1,4 +1,4 @@
-# The Image Gallery With Upload Feature
+# Photo gallery
 Stores images to MongoDB utilizing multer. This solution is easy to extend to uploading multiple files at once. **_Todo: 1. gridFS for bigger than 16Mb pics._**
 
 ### try it
