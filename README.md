@@ -1,9 +1,6 @@
 # Photo gallery
 Stores images to MongoDB utilizing multer. This solution is easy to extend to uploading multiple files at once. **_Todo: 1. gridFS for bigger than 16Mb pics._**
 
-### try it
-[app on render](https://photo-gallery-mwyi.onrender.com/)
-
 ## Prerequisites
 
 npm package manager and mongodb uri
