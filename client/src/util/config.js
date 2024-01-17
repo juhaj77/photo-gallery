@@ -7,5 +7,5 @@ export const options = {
   progress: 0.5,
 }
 
-//export const urlPrefix = process.env.NODE_ENV === 'development' ? 'http://localhost:8000' : ''
-export const urlPrefix = '' // this modification is for Render
+//export const urlPrefix = process.env.NODE_ENV === 'development' ? 'http://localhost:8000' : '' // use this for local setup
+export const urlPrefix = '' // this modification is for Render cloud
