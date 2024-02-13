@@ -18,7 +18,7 @@ router.post('/update/:id', items.update)
 
 router.get('/get/:id', items.getItem)
 
-router.post('/delete/:id', items.delete)
+router.delete('/delete/:id', items.delete)
 
 router.post('/add', upload.single('uploaded_file'), items.add)
 

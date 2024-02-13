@@ -57,7 +57,7 @@ const App = () => {
     setItemArray(itemArray.filter((i) => i.id !== id))
     try{
       toast.info('removing from server...', options)
-      await axios.post(`${urlPrefix}/api/delete/${id}`)
+      await axios.delete(`${urlPrefix}/api/delete/${id}`)
       toast.dismiss()
     } catch (e) {
       toast.dismiss()
